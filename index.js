@@ -38,7 +38,7 @@ function h() {
     else if(l instanceof HTMLElement)
       e.appendChild(l)
     else if ('function' === typeof l) {
-        if (l.toString().indexOf('class')>= 0) {
+        if (l.toString().indexOf('class') === 0) {
             e = new l(args[0]).render();
         } else {
             e = l(args[0]);
